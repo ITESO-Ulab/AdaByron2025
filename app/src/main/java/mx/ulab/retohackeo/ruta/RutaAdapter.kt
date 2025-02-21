@@ -10,14 +10,12 @@ import mx.ulab.retohackeo.R
 
 class RutaAdapter(
     private val items: List<String>,
-    private val duracion: String,
-    private val carga: String,
+    private val creditos: String,
     private val status: String,
 ) : RecyclerView.Adapter<RutaAdapter.ViewHolder>() {
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
         var tvMateria : TextView = itemView.findViewById(R.id.tvMateria)
-        var tvArea : TextView = itemView.findViewById(R.id.tvArea)
-        var tvDuracion : TextView = itemView.findViewById(R.id.tvDuracion)
+        var tvCreditos : TextView = itemView.findViewById(R.id.tvCreditos)
         var tvStatus : TextView = itemView.findViewById(R.id.tvStatus)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
@@ -29,8 +27,7 @@ class RutaAdapter(
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.tvMateria.text = items[position]
-        holder.tvArea.text = duracion
-        holder.tvDuracion.text = carga
+        holder.tvCreditos.text = creditos
         holder.tvStatus.text = status
         if (status != "Disponible") {
             holder.tvStatus.setTextColor(Color.rgb(250, 47, 10))

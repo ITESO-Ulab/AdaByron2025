@@ -50,11 +50,9 @@ class RutaActivity : AppCompatActivity() {
 // Haz algo con el elemento seleccionado
                 Log.d("selectedItem", "$position.- $item")
                 materiasPrograma = programaDataList[position].materias
-                val duracion = programaDataList[position].duracion
-                val cargaRecomendada = programaDataList[position].cargaRecomendada
+                val creditos = programaDataList[position].creditos
                 val disponible = programaDataList[position].disponible
-                recyclerView.adapter = RutaAdapter(materiasPrograma, duracion,
-                    cargaRecomendada, disponible)
+                recyclerView.adapter = RutaAdapter(materiasPrograma, creditos, disponible)
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
 // Otra lógica para cuando no se selecciona nada

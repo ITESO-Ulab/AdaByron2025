@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textAlignment="center"
-            android:text="Transporte"
+            android:text="Ruta Curricular"
             android:textColor="@color/white"
             android:layout_marginTop="25dp"
             android:layout_gravity="center"
