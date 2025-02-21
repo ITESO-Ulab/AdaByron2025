@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RetoHackeo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.RetoHackeo" parent="Base.Theme.RetoHackeo" />
+    <style name="HeaderBar">
+        <item name="android:background">@color/background</item>
+        <item name="android:textColorSecondary">@color/background</item>
+    </style>
+</resources>
